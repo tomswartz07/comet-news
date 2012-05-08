@@ -46,6 +46,7 @@ public class WidgetConfigActivity extends PreferenceActivity {
 	
 	public static final String ZERO = "0";
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);

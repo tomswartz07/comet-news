@@ -70,6 +70,7 @@ public class RSSOverviewListAdapter extends ResourceCursorAdapter {
 	
 	private Vector<View> sortViews;
 	
+	@SuppressWarnings("deprecation")
 	public RSSOverviewListAdapter(Activity activity) {
 		super(activity, R.layout.feedlistitem, activity.managedQuery(FeedData.FeedColumns.CONTENT_URI, null, null, null, null));
 		nameColumnPosition = getCursor().getColumnIndex(FeedData.FeedColumns.NAME);
@@ -97,6 +98,7 @@ public class RSSOverviewListAdapter extends ResourceCursorAdapter {
 		sortViews = new Vector<View>();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void bindView(View view, Context context, Cursor cursor) {
 		TextView textView = ((TextView) view.findViewById(android.R.id.text1));

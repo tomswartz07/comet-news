@@ -35,6 +35,7 @@ import com.pmsd.cometnews.service.RefreshService;
 
 public class SDMountBroadcastReceiver extends BroadcastReceiver {
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		if (!intent.getBooleanExtra("read-only", false)) {

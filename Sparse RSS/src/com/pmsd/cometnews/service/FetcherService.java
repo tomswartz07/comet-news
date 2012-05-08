@@ -109,6 +109,7 @@ public class FetcherService extends IntentService {
 		HttpURLConnection.setFollowRedirects(true);
 	}
 		
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onHandleIntent(Intent intent) {
 		if (preferences == null) {

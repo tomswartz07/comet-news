@@ -70,6 +70,7 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 import com.pmsd.cometnews.provider.FeedData;
 
+@SuppressWarnings("deprecation")
 public class EntryActivity extends Activity {
 	/*
 	private static final String NEWLINE = "\n";

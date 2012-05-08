@@ -39,6 +39,7 @@ import android.preference.PreferenceManager;
 import com.pmsd.cometnews.service.RefreshService;
 
 public class ApplicationPreferencesActivity extends PreferenceActivity {
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		if (MainTabActivity.isLightTheme(this)) {

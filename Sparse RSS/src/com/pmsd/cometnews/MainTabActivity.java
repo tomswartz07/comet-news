@@ -48,6 +48,7 @@ import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TextView;
 import com.pmsd.cometnews.provider.FeedData;
 
+@SuppressWarnings("deprecation")
 public class MainTabActivity extends TabActivity {
 	private static final int DIALOG_LICENSEAGREEMENT = 0;
 	
@@ -78,7 +79,6 @@ public class MainTabActivity extends TabActivity {
 	
 	private boolean hasContent;
 	
-	@SuppressWarnings("deprecation")
 	public void onCreate(Bundle savedInstanceState) {
 		if (isLightTheme(this)) {
 	    	setTheme(R.style.Theme_Light);

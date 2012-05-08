@@ -50,6 +50,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.pmsd.cometnews.provider.FeedData;
 
+@SuppressWarnings("deprecation")
 public class EntriesListActivity extends ListActivity {
 	private static final int CONTEXTMENU_MARKASREAD_ID = 6;
 	
